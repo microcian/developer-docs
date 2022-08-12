@@ -31,14 +31,14 @@ This will give the ability for your workspace users using mobile devices to rece
 
 * Execute
   * `openssl x509 -in aps_development.cer -inform der -out DevPushCert.pem`
-  * `openssl pkcs12 -nocerts -out DevPushKey.pem -in yourP12File.p12`
+  * `openssl pkcs12 -nocerts -out DevPushKey.pem -in yourP12File.p12 -nodes`
 * You **must** set a password for your PEM file
 
 #### Generating PEM files (Production)
 
 * Execute
   * `openssl x509 -in aps.cer -inform der -out PushCert.pem`
-  * `openssl pkcs12 -nocerts -out PushKey.pem -in yourP12File.p12`
+  * `openssl pkcs12 -nocerts -out PushKey.pem -in yourP12File.p12 -nodes`
 * You **must** set a password for your PEM file
 
 #### Copying PEM files to Rocket.Chat
